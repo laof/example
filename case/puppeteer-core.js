@@ -36,3 +36,7 @@ function searchParams(url, params) {
 //   response.writeHead(200, { 'Content-Type': 'text/plain' });
 //   response.end('Hello, ' + new Date().toLocaleString());
 // }).listen(5670);
+
+process.on('exit', async () => {
+  console.log('exit ok');
+});
